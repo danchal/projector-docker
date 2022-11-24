@@ -74,6 +74,8 @@ RUN true \
     && apt-get install git bash-completion sudo -y \
 # packages for IDEA (to disable warnings):
     && apt-get install procps -y \
+# packages for Android Studio
+    && apt-get install python3 g++ -y \ 
 # clean apt to reduce image size:
     && rm -rf /var/lib/apt/lists/* \
     && rm -rf /var/cache/apt
