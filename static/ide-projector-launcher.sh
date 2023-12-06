@@ -47,10 +47,10 @@ echo "Found IDE: $IDE_RUN_FILE_NAME"
 cp "$IDE_RUN_FILE_NAME.sh" "$IDE_RUN_FILE_NAME-projector.sh"
 
 # change
-# classpath "$CLASSPATH"
+# classpath "$CLASS_PATH"
 # to
-# classpath "$CLASSPATH:$IDE_HOME/projector-server/lib/*"
-sed -i 's+classpath "$CLASSPATH"+classpath "$CLASSPATH:$IDE_HOME/projector-server/lib/*"+g' "$IDE_RUN_FILE_NAME-projector.sh"
+# classpath "$CLASS_PATH:$IDE_HOME/projector-server/lib/*"
+sed -i 's+classpath "$CLASS_PATH"+classpath "$CLASS_PATH:$IDE_HOME/projector-server/lib/*"+g' "$IDE_RUN_FILE_NAME-projector.sh"
 
 # change
 # com.intellij.idea.Main
